@@ -1,0 +1,117 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    min-height: 600px;
+    background-image: url("imagem/312434.jpg");
+    background-color: #000000;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color: #ffffff;
+    margin-top: 16px;
+  }
+  
+  .page-logo {
+    width: 200px;
+  }
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  @media (max-height: 500px) {
+    body {
+      min-height: 800px;
+    }
+  }
+  
+  input {
+    margin: 4px;
+    padding: 6px;
+    border-radius: 5px;
+  }
+  
+  button {
+    margin-top: 12px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    background: #ffffff;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+  }
+  
+  .resultado {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  .botao:link,
+.botao:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.botao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.botao:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.botao-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.botao::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.botao-white::after {
+    background-color: #fff;
+}
+
+.botao:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.botao-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
