@@ -23,3 +23,5 @@ function Chutar() {
         document.getElementById("botaoA").style.cursor = "not-allowed";
     }
 }
+
+// hoal mundo
