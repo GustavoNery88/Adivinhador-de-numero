@@ -1,17 +1,3 @@
-
-
-// 
-// function botao() {
-//     contador++
-//     if (contador < 3) {
-//         console.log(contador)
-//     } else {
-//         document.getElementById("botao1").disabled = true;
-//         document.getElementById("botao1").style.backgroundColor = "Cornsilk";
-//         document.getElementById("botao1").style.color = "black";
-//         document.getElementById("botao1").style.cursor = "not-allowed";
-//     }
-// }
 let contador = 0;
 var numeroSecreto = parseInt(Math.random() * 11);
 
