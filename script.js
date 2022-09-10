@@ -24,4 +24,3 @@ function Chutar() {
     }
 }
 
-// hoal mundo
